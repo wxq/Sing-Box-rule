@@ -10,7 +10,7 @@
       "external_controller": "0.0.0.0:9095",
       "external_ui": "/etc/sing-box/ui",
       "secret": "",
-      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_url": "https://github.com/MetaCubeX/yacd/archive/gh-pages.zip",
       "external_ui_download_detour": "🚀 节点选择",
       "default_mode": "rule"
     },
@@ -43,7 +43,7 @@
 "inbounds": [
   {
     "type": "tun",
-    "address": "172.19.0.1/30",
+    "address": "10.0.0.1/30",
     "mtu": 9000,
     "auto_route": true,
     "auto_redirect": true,
@@ -59,7 +59,7 @@
   },
   {
     "type": "mixed",
-    "listen": "127.0.0.1",
+    "listen": "0.0.0.0",
     "listen_port": 2080,
     "sniff": true,
     "users": []
