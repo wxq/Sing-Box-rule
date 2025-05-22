@@ -11,7 +11,7 @@
       "external_ui": "/etc/sing-box/ui",
       "secret": "",
       "external_ui_download_url": "https://github.com/MetaCubeX/yacd/archive/gh-pages.zip",
-      "external_ui_download_detour": "🚀 优质节点",
+      "external_ui_download_detour": "🚀 节点选择",
       "default_mode": "rule"
     },
     "cache_file": {
@@ -35,7 +35,7 @@
         "address": "tls://8.8.8.8",
         "address_strategy": "ipv4_only",
         "strategy": "ipv4_only",
-        "detour": "🚀 优质节点"
+        "detour": "🚀 节点选择"
       }
     ],
     "rules": [
@@ -93,24 +93,24 @@
 
   "outbounds": [
     {
-      "tag": "🚀 优质节点",
+      "tag": "🚀 节点选择",
       "type": "selector",
-      "outbounds": ["♻️ 自动选择", "🚌 付费高容", "♾️ 无限节点", "🌍 地区节点", "🎥 奈飞节点", "💬 GPT节点", "🐸 全节点选择", "🎯 全球直连"]
+      "outbounds": ["♻️ 自动选择", "🚌 付费高容", "♾️ 无限节点", "🌍 地区节点", "🎥 奈飞节点", "💬 GPT节点", "🐸 手动选择", "🎯 全球直连"]
     },
     {
       "tag": "📹 高流量服务",
       "type": "selector",
-      "outbounds": ["🚌 付费高容", "🚀 优质节点", "♾️ 无限节点", "🐸 全节点选择", "🎯 全球直连"]
+      "outbounds": ["🚌 付费高容", "🚀 节点选择", "♾️ 无限节点", "🐸 手动选择", "🎯 全球直连"]
     },
     {
       "tag": "🎥 奈飞服务",
       "type": "selector",
-      "outbounds": ["🎥 奈飞节点", "🚀 优质节点", "🐸 全节点选择", "🎯 全球直连"]
+      "outbounds": ["🎥 奈飞节点", "🚀 节点选择", "🐸 手动选择", "🎯 全球直连"]
     },
     {
       "tag": "💬 GPT服务",
       "type": "selector",
-      "outbounds": ["💬 GPT节点", "🚀 优质节点", "🐸 全节点选择", "🎯 全球直连"]
+      "outbounds": ["💬 GPT节点", "🚀 节点选择", "🐸 手动选择", "🎯 全球直连"]
     },
     {
       "tag": "♻️ 自动选择",
@@ -294,7 +294,7 @@
       "tolerance": 50
     },
     {
-      "tag": "🐸 全节点选择",
+      "tag": "🐸 手动选择",
       "type": "selector",
       "outbounds": ["{all}"]
     },
@@ -306,7 +306,7 @@
 
   "route": {
     "auto_detect_interface": true,
-    "final": "🚀 优质节点",
+    "final": "🚀 节点选择",
     "rules": [
       {
         "action": "sniff"
@@ -321,7 +321,7 @@
       },
       {
         "clash_mode": "global",
-        "outbound": "🚀 优质节点"
+        "outbound": "🚀 节点选择"
       },
       {
         "domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"],
@@ -353,11 +353,11 @@
       },
       {
         "rule_set": ["geosite-google", "geosite-github", "geosite-telegram", "geosite-apple", "geosite-microsoft", "geosite-onedrive"],
-        "outbound": "🚀 优质节点"
+        "outbound": "🚀 节点选择"
       },
       {
         "rule_set": "geosite-geolocation-!cn",
-        "outbound": "🚀 优质节点"
+        "outbound": "🚀 节点选择"
       }
     ],
     "rule_set": [
@@ -366,105 +366,105 @@
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs",
-        "download_detour": "🚀 优质节点"
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-youtube",
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs",
-        "download_detour": "🚀 优质节点"
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-google",
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs",
-        "download_detour": "🚀 优质节点"
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-github",
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github.srs",
-        "download_detour": "🚀 优质节点"
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-telegram",
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/telegram.srs",
-        "download_detour": "🚀 优质节点"
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-tiktok",
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/tiktok.srs",
-        "download_detour": "🚀 优质节点"
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-netflix",
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs",
-        "download_detour": "🚀 优质节点"
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-apple",
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple.srs",
-        "download_detour": "🚀 优质节点"
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-microsoft",
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/microsoft.srs",
-        "download_detour": "🚀 优质节点"
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-onedrive",
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/onedrive.srs",
-        "download_detour": "🚀 优质节点"
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-geolocation-!cn",
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/geolocation-!cn.srs",
-        "download_detour": "🚀 优质节点"
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-cn",
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
-        "download_detour": "🚀 优质节点"
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-private",
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/private.srs",
-        "download_detour": "🚀 优质节点"
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geoip-cn",
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
-        "download_detour": "🚀 优质节点"
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geoip-private",
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/private.srs",
-        "download_detour": "🚀 优质节点"
+        "download_detour": "🚀 节点选择"
       }
     ]
   }
