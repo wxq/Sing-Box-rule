@@ -38,6 +38,7 @@
     {"tag": "🚌 付费高容", "type": "urltest", "outbounds": []},
     {"tag": "♾️ 无限节点", "type": "urltest", "outbounds": []},
     {"tag": "💬 GPT节点", "type": "urltest", "outbounds": []},
+    {"tag": "🎥 奈飞节点", "type": "urltest", "outbounds": []},
     {"tag": "🇭🇰 香港手动", "type": "selector", "outbounds": []},
     {"tag": "🇯🇵 日本手动", "type": "selector", "outbounds": []},
     {"tag": "🇸🇬 狮城手动", "type": "selector", "outbounds": []},
